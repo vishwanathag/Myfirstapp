@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" type="text/css" href="app_framework/3.0/af.ui.css" data-ver="2">
+    <link rel="stylesheet" type="text/css" href="app_framework/3.0/icons.min.css">
+    <link rel="stylesheet" type="text/css" href="css/hotel_main.less.css" class="main-less">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+    <script src="intelxdk.js"></script>
+    <script src="cordova.js"></script>
+    <script src="xhr.js"></script>
+    <script src="xdk/init-dev.js"></script>
+    <script type="application/javascript" src="lib/jquery.min.js"></script>
+    <script type="application/javascript">
+      $.afui.autoLaunch = false; //By default, it is set to true and you're app will run right away.  We set it to false to show a splashscreen
+      /* This function runs when the content is loaded.*/
+      $.afui.useOSThemes=false;
+       $(document).ready(function(){
+          setTimeout(function(){
+              $.afui.launch();
+          },1500);
+      });
+    </script>
+    <script type="application/javascript" src="app_framework/3.0/appframework.ui.min.js"></script>
+    <script type="application/javascript" src="js/hotel_user_scripts.js"></script>
+  </head>
+
+  <body id="afui" class="v2">
+
+    <div class="upage vertical-col left view viswa" id="mainpage" data-header="none" data-footer="none">
+      <div class="pages">
+        <div class="upage-content vertical-col left panel ac0" id="uib_page_1">
+          <div class="widget uib_w_1 visw" data-uib="media/img" data-ver="0">
+            <figure class="figure-align">
+              <img src="img/Tulips.jpg">
+
+              <figcaption data-position="bottom"></figcaption>
+            </figure>
+          </div>
+          <div class="tarea widget uib_w_2 d-margins color" data-uib="media/text" data-ver="0" name="uib_w_2">
+            <div class="widget-container left-receptacle"></div>
+            <div class="widget-container right-receptacle"></div>
+            <div class="text-container">
+              <p>&nbsp;</p>
+
+              <p>Time: 3min
+                <br>&nbsp;Serves 2-3 people&nbsp;
+                <br>&nbsp;&nbsp;
+              </p>
+
+              <h2>&nbsp;GreenTea</h2>
+
+              <p>Steps invovled:</p>
+
+              <ul>
+                <li>
+                  <p>&nbsp;&nbsp; 1 cup of Milk</p>
+                </li>
+                <li>
+                  <p>&nbsp; &nbsp;200Gms Sugar</p>
+                </li>
+                <li>
+                  <p>&nbsp; &nbsp;1 cup of water</p>
+                </li>
+              </ul>
+
+              <h2>&nbsp;</h2>
+            </div>
+          </div><a class="button widget uib_w_3 d-margins green" data-uib="app_framework/button" data-ver="2">Go Back</a>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
